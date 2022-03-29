@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float jump = 2.5f;
 
+    private bool ableJump = true;
+
 
     void Start()
     {
@@ -25,6 +27,13 @@ public class PlayerController : MonoBehaviour
 
     void Movement()
     {
+
+        if (Input.GetKey(KeyCode.Space) && ableJump)
+        {
+            playerRB.AddForce(Vector2.up * jump, ForceMode2D.Impulse);
+
+            ableJump = false;
+        }
         if (Input.GetKey(KeyCode.A))
         {
             playerRB.AddForce(Vector2.left * speed, ForceMode2D.Force);
@@ -35,9 +44,13 @@ public class PlayerController : MonoBehaviour
             playerRB.AddForce(Vector2.right * speed, ForceMode2D.Force);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground") && !ableJump)
         {
-            playerRB.AddForce(Vector2.up * jump, ForceMode2D.Impulse);
+            ableJump = true;
         }
     }
 }
