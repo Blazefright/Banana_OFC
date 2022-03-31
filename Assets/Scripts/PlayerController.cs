@@ -65,7 +65,8 @@ public class PlayerController : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("StaticBad") && !canRespawn)
         {
-            Debug.Log("Death at " + ((int)Time.deltaTime) + " seconds in");
+            Debug.Log("Death at " + ((float)Time.deltaTime) + " seconds in");
+            playerRB.transform.position = flagPos.transform.position;
         }
     }
 }
