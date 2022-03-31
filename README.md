@@ -3,5 +3,5 @@
 ### By 
 ## LowFi_Overwrite
  
-Currently just a clusterfuck of code but it just started!
-> March 29th, 2022
+Starting to get semi good! You can now play the basic thing but it isn't the best.
+> March 31st, 2022
