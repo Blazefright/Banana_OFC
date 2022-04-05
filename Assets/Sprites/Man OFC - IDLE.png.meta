@@ -29,6 +29,18 @@ TextureImporter:
   - first:
       213: 8868195495754671297
     second: Man OFC - IDLE_8
+  - first:
+      213: -5888782451582989405
+    second: Man OFC - IDLE_9
+  - first:
+      213: 5427917352623389311
+    second: Man OFC - IDLE_10
+  - first:
+      213: 3807918781988017100
+    second: Man OFC - IDLE_11
+  - first:
+      213: -1783968859246321742
+    second: Man OFC - IDLE_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -122,11 +134,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
+        y: 72
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -143,11 +155,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 24
-        y: 48
+        y: 72
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -164,11 +176,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 48
+        y: 72
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,12 +196,12 @@ TextureImporter:
       name: Man OFC - IDLE_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 24
+        x: 72
+        y: 72
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,12 +217,12 @@ TextureImporter:
       name: Man OFC - IDLE_4
       rect:
         serializedVersion: 2
-        x: 24
-        y: 24
+        x: 0
+        y: 48
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,12 +238,12 @@ TextureImporter:
       name: Man OFC - IDLE_5
       rect:
         serializedVersion: 2
-        x: 48
-        y: 24
+        x: 24
+        y: 48
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -247,12 +259,12 @@ TextureImporter:
       name: Man OFC - IDLE_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 48
+        y: 48
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,12 +280,12 @@ TextureImporter:
       name: Man OFC - IDLE_7
       rect:
         serializedVersion: 2
-        x: 24
-        y: 0
+        x: 72
+        y: 48
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -289,12 +301,12 @@ TextureImporter:
       name: Man OFC - IDLE_8
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
+        x: 0
+        y: 24
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,6 +314,90 @@ TextureImporter:
       bones: []
       spriteID: 1c42d2351d8221b70800000000000000
       internalID: 8868195495754671297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man OFC - IDLE_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab87d57f87d64ea0800000000000000
+      internalID: -5888782451582989405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man OFC - IDLE_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7abb49e216d35b40800000000000000
+      internalID: 5427917352623389311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man OFC - IDLE_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc31fedf4f178d430800000000000000
+      internalID: 3807918781988017100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man OFC - IDLE_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf934e36c11e37e0800000000000000
+      internalID: -1783968859246321742
       vertices: []
       indices: 
       edges: []
