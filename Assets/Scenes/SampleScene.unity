@@ -387,7 +387,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &898938960
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -469,6 +469,7 @@ MonoBehaviour:
   jump: 5
   startingPos: {fileID: 444393005}
   flagPos: {fileID: 2141088552}
+  maxIdleTimer: 1
 --- !u!60 &898938963
 PolygonCollider2D:
   m_ObjectHideFlags: 0

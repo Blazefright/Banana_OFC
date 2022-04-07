@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer playerSR;
 
     [SerializeField]
-    int maxIdleTimer = 1;
+    int maxIdleTimer = 0;
 
     private bool canRespawn = true;
 
@@ -50,6 +50,8 @@ public class PlayerController : MonoBehaviour
 
             ableJump = false;
             playerAN.SetBool("OnGround", false);
+            playerAN.SetBool("LongSit", false);
+            maxIdleTimer = 0;
 
         }
         if (Input.GetKey(KeyCode.A))
@@ -58,6 +60,8 @@ public class PlayerController : MonoBehaviour
             playerAN.SetBool("Idle", false);
             playerAN.SetBool("Walking", true);
             playerSR.flipX = true;
+            playerAN.SetBool("LongSit", false);
+            maxIdleTimer = 0;
         }
         else if (Input.GetKey(KeyCode.D))
         {
@@ -65,6 +69,8 @@ public class PlayerController : MonoBehaviour
             playerAN.SetBool("Idle", false);
             playerAN.SetBool("Walking", true);
             playerSR.flipX = false;
+            playerAN.SetBool("LongSit", false);
+            maxIdleTimer = 0;
         }
         else
         {
@@ -77,12 +83,16 @@ public class PlayerController : MonoBehaviour
             playerAN.SetBool("Idle", false);
             playerAN.SetBool("JumpUp", true);
             playerAN.SetBool("Falling", false);
+            playerAN.SetBool("LongSit", false);
+            maxIdleTimer = 0;
         }
         else if (playerRB.velocity.y < -0.1f)
         {
             playerAN.SetBool("JumpUp", false);
             playerAN.SetBool("Falling", true);
             playerAN.SetBool("Idle", false);
+            playerAN.SetBool("LongSit", false);
+            maxIdleTimer = 0;
         }
         else
         {
@@ -90,23 +100,26 @@ public class PlayerController : MonoBehaviour
             playerAN.SetBool("Falling", false);
         }
 
-        //if (playerAN.GetBool("Idle") == true)
-        //{
-        //    StartCoroutine(Sittertimer());
-            
-        //}
+        if (playerAN.GetBool("Idle") == true && maxIdleTimer < 5)
+        {
+            StartCoroutine(Sittertimer());
+
+        }
     }
 
-    //IEnumerator Sittertimer()
-    //{
-    //    if (maxIdleTimer < 5)
-    //    {
-    //        maxIdleTimer = +1;
-            
-    //    }
+    IEnumerator Sittertimer()
+    {
+        
+        new WaitForSecondsRealtime(25);
+        maxIdleTimer += 1;
 
-    //    yield return new WaitForSecondsRealtime(1);
-    //}
+        if (maxIdleTimer == 5)
+        {
+            playerAN.SetBool("LongSit", true);
+        }
+
+        yield return maxIdleTimer;
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
