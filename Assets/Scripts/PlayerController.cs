@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
 
     private bool canRespawn = true;
 
+    public float leftTest;
+
     void Start()
     {
         playerSR = GetComponent<SpriteRenderer>();
@@ -39,12 +41,14 @@ public class PlayerController : MonoBehaviour
     
     void FixedUpdate()
     {
+
+        leftTest = Input.GetAxis("Right");
         Movement();
     }
 
     void Movement()
     {
-        if (Input.GetKey(KeyCode.Space) && ableJump)
+        if (Input.GetButton(buttonName:"Jump") && ableJump)
         {
             playerRB.AddForce(Vector2.up * jump, ForceMode2D.Impulse);
 
@@ -54,7 +58,7 @@ public class PlayerController : MonoBehaviour
             maxIdleTimer = 0;
 
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetAxis("Right") < -0.5f)
         {
             playerRB.AddForce(Vector2.left * speed, ForceMode2D.Force);
             playerAN.SetBool("Idle", false);
@@ -63,7 +67,7 @@ public class PlayerController : MonoBehaviour
             playerAN.SetBool("LongSit", false);
             maxIdleTimer = 0;
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D) || Input.GetAxis("Right") > 0.5f)
         {
             playerRB.AddForce(Vector2.right * speed, ForceMode2D.Force);
             playerAN.SetBool("Idle", false);
