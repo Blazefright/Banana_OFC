@@ -470,6 +470,7 @@ MonoBehaviour:
   startingPos: {fileID: 444393005}
   flagPos: {fileID: 2141088552}
   maxIdleTimer: 1
+  leftTest: 0
 --- !u!60 &898938963
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -806,7 +807,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!1 &1639295072
 GameObject:
   m_ObjectHideFlags: 0
